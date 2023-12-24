@@ -1,0 +1,13 @@
+.profile-form {
+    max-width: 400px; /* или любое другое значение, которое подходит вам */
+    margin: 0 auto; /* чтобы центрировать форму на странице */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px; /* фиксированная ширина подписи */
+}

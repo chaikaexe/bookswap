@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+Создание заявки - BookSwap
+{% endblock %}
+
+{% block content %}
+    <h1>Создать заявку</h1>
+    <form method="post" action="{% url 'app:create' %}">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.author }}<br>
+        {{ form.desc }}<br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}
